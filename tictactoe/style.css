@@ -1,0 +1,52 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blanchedalmond;
+}
+
+.container {
+    text-align: center;
+    color: #820a0a;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.cell:hover {
+    background: #eee;
+}
+
+button {
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #820a0a;
+    color: blanchedalmond;
+    border: none;
+    border-radius: 4px;
+}
+
+#message {
+    color:#820a0a;
+    font-weight: bold;
+}
