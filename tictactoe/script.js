@@ -19,6 +19,7 @@ document.querySelectorAll('.cell').forEach(cell=> {
 });
 
 document.getElementById('restart').addEventListener('click',restartGame);
+document.getElementById('theme-switch').addEventListener('change', toggleTheme);
 
 function handleCellClick(e) {
     const index=e.target.dataset.index;
@@ -57,4 +58,9 @@ function restartGame() {
     document.getElementById('turn').textContent='Current turn: X';
     document.getElementById('message').textContent='';
     document.querySelectorAll('.cell').forEach(cell=>cell.textContent='');
+}
+
+function toggleTheme() {
+    document.body.classList.toggle('light-mode');
+    document.body.classList.toggle('dark-mode');
 }
